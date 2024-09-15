@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversario 1 Año</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f3e5f5; /* Fondo morado claro */
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff; /* Fondo blanco para el contenedor */
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #6a1b9a; /* Morado oscuro */
+            margin-top: 0;
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .photo-gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .dedication-container {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            margin-top: 30px;
+            gap: 20px;
+        }
+
+        .dedication {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0;
+            text-align: left;
+        }
+
+        .dedication p {
+            font-size: 1.2em;
+            color: #333;
+            margin: 0 0 20px 0;
+        }
+
+        .spotify-player {
+            flex: 1;
+            max-width: 300px;
+            margin-top: 20px;
+        }
+
+        .next-button, .back-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .next-button {
+            background-color: #6a1b9a; /* Morado oscuro */
+            color: white;
+        }
+
+        .back-button {
+            background-color: #b39ddb; /* Morado claro */
+            color: #fff;
+        }
+
+        .next-button:hover {
+            background-color: #4a148c; /* Morado más oscuro para el estado hover */
+            transform: scale(1.05);
+        }
+
+        .back-button:hover {
+            background-color: #9a6dff; /* Morado más oscuro para el estado hover */
+            transform: scale(1.05);
+        }
+
+        .next-button:active {
+            background-color: #4a148c;
+        }
+
+        .back-button:active {
+            background-color: #7e5bf7;
+        }
+
+        .video-container {
+            margin-top: 40px;
+        }
+
+        #videoIframe {
+            width: 100%;
+            height: 315px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Feliz 1er Aniversario, Amor de mi Vida!</h1>
+        <p>Un año lleno de momentos inolvidables a tu lado.</p>
+        
+        <div class="photo-gallery">
+            <img src="img/foto1.jpg" alt="Foto 1">
+            <img src="img/foto3.jpg" alt="Foto 3">
+            <img src="img/foto4.jpg" alt="Foto 4">
+            <img src="img/foto6.jpg" alt="Foto 6">
+            <img src="img/foto7.jpg" alt="Foto 7">
+        </div>
+
+        <div class="dedication-container">
+            <div class="dedication">
+                <p>Gracias por este maravilloso año juntas. Cada momento a tu lado ha sido increíble, y deseo que sigamos compartiendo más momentos como los que ya hemos vivido. Eres la mujer con la que siempre soñé, lo que siempre quise y mucho más.</p>
+                
+                <p>Tu amor y apoyo han llenado mi vida de alegría y felicidad. Eres perfecta para mí, y cada día a tu lado es un regalo que valoro profundamente.</p>
+                
+                <p>Me siento tan afortunada de tenerte en mi vida y de poder crear juntas recuerdos inolvidables. Espero que sigamos construyendo sueños y compartiendo momentos hermosos, porque contigo, cada día es especial.</p>
+                
+                <p>¡Te amo muchísimo, crespita hermosa!</p>
+            </div>
+
+            <div class="spotify-player">
+                <iframe src="https://open.spotify.com/embed/track/0bK3jxkbq5cDKWr68KtO8G?utm_source=generator" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </div>
+
+        <a href="Carta.html" class="next-button">Siguiente</a>
+        <a href="javascript:history.back()" class="back-button">Regresar</a>
+    </div>
+</body>
+</html>
